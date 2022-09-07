@@ -1,0 +1,353 @@
+@font-face {
+	font-family: 'Ubuntu-light';
+	src: url(FONTS/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url(FONTS/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+a{
+	color: #626262;
+ }
+body{
+	margin: 0;
+	font-family: 'Playfair Display';
+	font-size: 14px;
+}
+html,body{
+	min-height: 100%;
+}
+
+.container{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	max-width: 1085px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+/* ..........Header......... */
+.header{
+	display: flex;
+	flex-direction: row;
+	/*position: sticky;*/
+	/*overflow: hidden;*/
+	background-color: #fff;
+	top: 0;
+	z-index: 5;
+	justify-content: space-between;
+	align-items: center;
+	height: 140px;
+	width: 100%;
+}
+.header-logo{
+	color: #000;
+	z-index: 4;
+	font-size: 30px;
+	letter-spacing: 6px;
+	font-family: 'Inconsolata';
+}
+.header-menu{
+	text-align: center;
+	display: flex;
+}
+.header-menu a{
+	color: #626262;
+}
+.menu-link:last-child{
+	margin-left: 90px;
+}
+.menu-link:nth-child(3){
+	margin-left: 102px;
+}
+.menu-link:nth-child(2){
+	margin-left: 117px;
+}
+.header-burger{
+	display: none;
+}
+
+
+/*........... Home-page ........ */
+.home-page{
+	z-index: 4;
+}
+.home-page-img{
+	max-width: 100%;
+}
+ .home-page-img img{
+	max-width: 100%;
+	object-fit:contain;
+}
+
+.content-wrapper{
+	flex:1 1 auto;
+	margin: 0 auto;
+}
+.content{
+	max-width: 920px;
+	margin: 0 auto;
+}
+
+.content-link, .content-link a{
+	font-family: 'Ubuntu-light';
+	color: #b4ad9e;
+}
+
+.summary-title{
+	font-family: 'Playfair Display';
+	margin-top: 20px;
+	color: #626262;
+	font-size: 30px;
+}
+.content__summary p{
+	font-family: 'Playfair Display';
+	margin: 34px 0 52px 0;
+	line-height: 1.71;
+	color: #626262;
+}
+
+/* Content cards */
+.content__cards {
+	display: flex;
+	justify-content:space-between;	
+	flex-wrap: wrap;
+}
+
+.card {
+	max-width: 420px;
+	min-height: 478px;
+}
+
+.content-link {
+	margin-top: 26px;
+}
+.card-title {
+	font-size: 30px;
+	margin-top: 13px;
+	color: #626262;
+}
+.card-text {
+	margin-top: 34px;
+	max-width: 100%;
+	max-height: 63px;
+	overflow:hidden;
+	color: #626262;
+
+}
+
+.form-wrapper {
+	background-size: 100%;
+	padding: 73px 10px ;
+	height: 287px;
+	background: #f0f0f0;
+	margin: 123px auto;
+	text-align: center;
+}
+.form-title {
+	line-height: normal;
+	font-family: 'Playfair Display';
+	font-size: 30px;
+	color:#333;
+	letter-spacing: 0.75px;
+}
+.form-input {
+	width: 100%;
+}
+.form-not-valid-email{
+	color: red;
+}
+div.form{
+	margin: 83px auto;
+	border-bottom: 1px solid black;
+	padding: 0 5px 3px 0;
+	max-width: 400px;
+	display: flex;
+	justify-content: space-between;
+}
+.form-button{
+	cursor: pointer;
+}
+.form-button::after{
+	content: url('../../src/img/icons/send-icon.png');
+}
+.btn-more{
+	margin: 0 auto;
+}
+.load-more{
+		width: 164px;
+		height: 60px;
+		margin: 165px auto 1370px;
+		padding: 21px 34px 22px;
+		border: solid 1px #626262;
+}
+.load-more:hover{
+	color: white;
+	transition: 0.2s;
+	background-color: #626262;
+}
+
+/* ..........Footer........... */
+.footer{
+	background-color: #f0f0f0;
+	font-family: 'Playfair Display';
+	padding: 0 10px 0 81px;
+	box-shadow:0 0px 32px -12px #737373;;
+}
+.footer-flex {
+	color: #000;
+	height: 97px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer__terms-privacy{
+	justify-self: start;
+}
+.footer__terms-privacy a:not(:last-child){
+	margin-right: 17px;
+}
+.footer__follow {
+	justify-self: flex-end;
+	display: flex;
+}
+.icons{
+	display: flex;
+	flex-direction: row;
+}
+.footer__follow a:not(:last-child){
+	margin-right: 17px;
+}
+
+.title {
+	margin-right: 21px;
+	line-height: 15px;
+}
+
+.photodiry{
+	margin-top: 60px;
+}
+.photodiry__item:not(:first-child){
+	margin-top: 60px;
+}
+.discription {
+	font-family: 'Playfair Display';
+	margin-top: 55px;
+	line-height: 1.71;
+}
+.discription .italic{
+	font-style: italic;
+	padding: 0 20px;
+}
+.discription p {
+	margin-top: 30px;
+}
+.share-flex {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin-top: 65px;
+}
+.content-link {
+	margin: 0 23px 0 0;
+
+}
+.share__icons {
+	display: flex;
+}
+.share__icons a:not(:first-child){
+	margin-left: 16px;
+}
+
+.more-photos{
+	background-color: rgb(242, 242, 242, 0.8);;
+	min-height: 435px;
+	padding: 69px 0 80px;
+	margin-top: 120px;
+}
+
+.title-link {
+	font-size: 14px;
+	font-weight: 300;
+	color: #b4ad9e;
+}
+
+.gallery-flex {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.gallery-item {
+	flex: 0 1 auto;
+}
+.gallery-item div{
+	font-family: "Playfair Display";
+	margin-top: 14px;
+	font-size: 20px;
+	color: #626262;
+}
+main{
+	min-height: 100%;
+}
+
+.comments {
+	margin-top: 67px;
+	min-height: 1200px;
+}
+
+.coments-counter {
+	font-family: 'Ubuntu';
+	color: #b4ad9e;
+}
+.comments__items {
+	margin-top: 41px;
+}
+.comment__item-flex {
+	display: flex;
+	align-items: center;
+}
+.comment__item-flex:not(:first-child) {
+	margin-top: 57px;
+}
+.comment-avatar {
+	margin-right: 36px;
+	flex:0 0 auto;
+}
+.add-new-comment .comment__item-flex{
+	margin-top: 53px;
+}
+
+.comment-username {
+	font-family: 'Playfair Display';
+	font-weight: bold;
+	color: #626262;
+}
+.comment-message {
+	margin-top: 14px;
+	font-family: 'Playfair Display';
+	color: #626262;
+}
+.comment-reply {
+	margin-top: 26px;
+}
+
+.add-new-comment input {
+	width: 100%;
+	height: 70px;
+	padding: 0 40px;
+	border-radius: 5px;
+	border: solid 1px #c8c8c8;
+	font-family: 'Ubuntu';
+}
+.new-message{
+	flex: 1 0 auto;
+}
+.add-new-comment input::placeholder{
+	color: #c8c8c8;
+}
+
+
+/* ........Sidebar page........ */
